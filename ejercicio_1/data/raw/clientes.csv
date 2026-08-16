@@ -1,0 +1,21 @@
+id_cliente,nombre,telefono
+1,Juan,3001234567
+2,Ana,57 301-555-1234
+3,Pedro,
+4,Luis,3001234567
+5,Camila,3158889999
+6,Sofia,(+57) 310-444-5555
+7,Carlos,abc123
+8,Maria,3207778888
+9,Andres,3112223333
+10,Laura,3009991111
+11,Diego,12345
+12,Sandra,3185554444
+13,Felipe,+57 317 123 4567
+14,Valentina,3100000000
+15,Jorge,
+16,Natalia,3207778888
+17,Ricardo,57-315-444-2222
+18,Diana,(315)9998888
+19,Sebastian,telefono_no_valido
+20,Paula,3001112222

@@ -1,0 +1,38 @@
+name: CI - Validación de dataset de teléfonos
+
+on:
+  push:
+    paths:
+      - 'ejercicio_1/**'
+  pull_request:
+    paths:
+      - 'ejercicio_1/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: ejercicio_1
+
+    steps:
+      - name: Checkout del código
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Correr tests
+        run: pytest -v
+
+      - name: Correr pipeline (genera el dataset validado)
+        run: |
+          cd src
+          python main.py
+        continue-on-error: true
