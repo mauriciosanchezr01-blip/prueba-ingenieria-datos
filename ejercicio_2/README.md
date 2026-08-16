@@ -38,14 +38,17 @@ respuesta sin escribirme.
 - cómo se ha movido esto en el tiempo, comparando corridas
 - hace cuánto corrió el pipeline por última vez
 
-## Cómo se vería
+## Cómo me imagino el dashboard
 
-Armé una maqueta de cómo imagino el dashboard: arriba los números clave
-de la última corrida, una gráfica de tendencia para ver si la calidad
-va mejorando o empeorando, y abajo el detalle de los últimos registros
-descartados con su motivo. Nada de esto necesita una herramienta cara —
-con Metabase, PowerBI o incluso un notebook que se actualice solo, ya
-se puede montar algo así apuntando a la tabla de métricas.
+Algo simple, no hace falta nada sofisticado. Arriba los números clave
+de la corrida más reciente (con la variación contra la corrida
+anterior), en medio cómo se ha movido el % de válidos en el tiempo y
+cómo se reparten los motivos de descarte, y abajo el detalle de qué se
+cayó y por qué. Con Metabase, PowerBI o hasta un notebook que se
+actualice solo ya se puede montar algo así, apuntando a la tabla de
+métricas.
+
+![Maqueta del dashboard en Power BI](./dashboard_mockup.png)
 
 ## Cómo conecta con lo que ya existe
 
